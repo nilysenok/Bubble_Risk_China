@@ -49,8 +49,8 @@ GitHub_Replication_Package/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/nilysenok/DBN-FBD-China.git
-cd DBN-FBD-China
+git clone https://github.com/nilysenok/Bubble_Risk_China.git
+cd Bubble_Risk_China
 ```
 
 ### 2. Create Virtual Environment (Recommended)
@@ -262,7 +262,7 @@ For questions, issues, or feedback regarding this replication package:
 
 - **Corresponding Author**: N. I. Lysenok (nilysenok@hse.ru)
 - **Co-Author**: S. M. Gavrikov (smgavrikov@sdf-solutions.com)
-- **GitHub Issues**: https://github.com/nilysenok/DBN-FBD-China/issues
+- **GitHub Issues**: https://github.com/nilysenok/Bubble_Risk_China/issues
 
 ## Acknowledgments
 

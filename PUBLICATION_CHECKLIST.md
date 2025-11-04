@@ -72,7 +72,7 @@ Complete this checklist before publishing your replication package to GitHub.
 
 ### 6. Create Repository
 
-- [ ] Create new public repository: `DBN-FBD-China`
+- [ ] Create new public repository: `Bubble_Risk_China`
 - [ ] Add description: "Replication package for 'Financial Bubble Detection in Chinese Stock Markets Using Dynamic Bayesian Networks' (CFRI 2025)"
 - [ ] Add topics/tags: `finance`, `china`, `bubble-detection`, `bayesian-networks`, `machine-learning`, `replication-package`
 - [ ] Initialize with README (or upload existing)
@@ -144,8 +144,8 @@ Run through this complete workflow on a fresh machine:
 
 ```bash
 # Clone
-git clone https://github.com/nilysenok/DBN-FBD-China.git
-cd DBN-FBD-China
+git clone https://github.com/nilysenok/Bubble_Risk_China.git
+cd Bubble_Risk_China
 
 # Setup
 python3 -m venv venv
@@ -231,7 +231,7 @@ Before going live, confirm:
 
 **Published By**: S. M. Gavrikov and N. I. Lysenok
 
-**Repository URL**: https://github.com/nilysenok/DBN-FBD-China
+**Repository URL**: https://github.com/nilysenok/Bubble_Risk_China
 
 **Zenodo DOI**: _______________
 

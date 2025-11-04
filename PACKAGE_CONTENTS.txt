@@ -299,7 +299,7 @@ For questions or issues:
 1. Check README.md Troubleshooting section
 2. Review QUICKSTART.md for common setup problems
 3. Consult DATA_DICTIONARY.md for variable definitions
-4. Open GitHub issue: https://github.com/nilysenok/DBN-FBD-China/issues
+4. Open GitHub issue: https://github.com/nilysenok/Bubble_Risk_China/issues
 5. Email corresponding author: nilysenok@hse.ru
 
 ================================================================================

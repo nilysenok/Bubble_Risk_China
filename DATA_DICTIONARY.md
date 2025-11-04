@@ -192,7 +192,7 @@ China Finance Review International.
 
 For questions about data definitions, sources, or access:
 - Corresponding Author: N. I. Lysenok (nilysenok@hse.ru)
-- GitHub: https://github.com/nilysenok/DBN-FBD-China/issues
+- GitHub: https://github.com/nilysenok/Bubble_Risk_China/issues
 
 ---
 
