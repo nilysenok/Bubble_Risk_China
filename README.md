@@ -49,7 +49,7 @@ GitHub_Replication_Package/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/DBN-FBD-China.git
+git clone https://github.com/nilysenok/DBN-FBD-China.git
 cd DBN-FBD-China
 ```
 
@@ -226,9 +226,9 @@ All core results (bubble scores, accuracy metrics, economic value) should match 
 If you use this code or data in your research, please cite:
 
 ```bibtex
-@article{author2025bubble,
+@article{gavrikov2025bubble,
   title={Financial Bubble Detection in Chinese Stock Markets Using Dynamic Bayesian Networks},
-  author={[Author Name]},
+  author={Gavrikov, S. M. and Lysenok, N. I.},
   journal={China Finance Review International},
   year={2025},
   volume={XX},
@@ -260,8 +260,9 @@ This replication package is licensed under the MIT License (see LICENSE file).
 
 For questions, issues, or feedback regarding this replication package:
 
-- **Email**: [your.email@institution.edu]
-- **GitHub Issues**: https://github.com/YOUR-USERNAME/DBN-FBD-China/issues
+- **Corresponding Author**: N. I. Lysenok (nilysenok@hse.ru)
+- **Co-Author**: S. M. Gavrikov (smgavrikov@sdf-solutions.com)
+- **GitHub Issues**: https://github.com/nilysenok/DBN-FBD-China/issues
 
 ## Acknowledgments
 

@@ -55,4 +55,4 @@ python generate_statistical_validation.py      # Statistical validation
 
 ## Questions?
 
-Open an issue at: https://github.com/YOUR-USERNAME/DBN-FBD-China/issues
+Open an issue at: https://github.com/nilysenok/DBN-FBD-China/issues

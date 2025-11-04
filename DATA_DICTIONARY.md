@@ -179,8 +179,9 @@ When using this dataset, please cite both the paper and the original data source
 
 **Paper:**
 ```
-[Author] (2025). Financial Bubble Detection in Chinese Stock Markets Using
-Dynamic Bayesian Networks. China Finance Review International.
+Gavrikov, S. M. and Lysenok, N. I. (2025). Financial Bubble Detection in
+Chinese Stock Markets Using Dynamic Bayesian Networks.
+China Finance Review International.
 ```
 
 **Data sources:** See README.md for complete list of data provider citations.
@@ -190,8 +191,8 @@ Dynamic Bayesian Networks. China Finance Review International.
 ## Contact
 
 For questions about data definitions, sources, or access:
-- Email: [your.email@institution.edu]
-- GitHub: https://github.com/YOUR-USERNAME/DBN-FBD-China/issues
+- Corresponding Author: N. I. Lysenok (nilysenok@hse.ru)
+- GitHub: https://github.com/nilysenok/DBN-FBD-China/issues
 
 ---
 

@@ -299,8 +299,8 @@ For questions or issues:
 1. Check README.md Troubleshooting section
 2. Review QUICKSTART.md for common setup problems
 3. Consult DATA_DICTIONARY.md for variable definitions
-4. Open GitHub issue: https://github.com/YOUR-USERNAME/DBN-FBD-China/issues
-5. Email corresponding author: [your.email@institution.edu]
+4. Open GitHub issue: https://github.com/nilysenok/DBN-FBD-China/issues
+5. Email corresponding author: nilysenok@hse.ru
 
 ================================================================================
 CITATION
@@ -308,9 +308,9 @@ CITATION
 
 When using this replication package, please cite:
 
-    [Author Name] (2025). Financial Bubble Detection in Chinese Stock
-    Markets Using Dynamic Bayesian Networks. China Finance Review
-    International, Vol. XX, No. X, pp. XXX-XXX.
+    Gavrikov, S. M. and Lysenok, N. I. (2025). Financial Bubble Detection
+    in Chinese Stock Markets Using Dynamic Bayesian Networks.
+    China Finance Review International, Vol. XX, No. X, pp. XXX-XXX.
     https://doi.org/10.1108/CFRI-XX-XXXX-XXXX
 
 BibTeX entry available in CITATION.cff

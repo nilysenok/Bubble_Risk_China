@@ -6,23 +6,23 @@ Complete this checklist before publishing your replication package to GitHub.
 
 ### 1. Update Placeholder Information
 
-- [ ] Replace `[Author Name]` with actual author name in:
-  - [ ] README.md (lines 8, 156, 167, 172)
-  - [ ] CITATION.cff (lines 7-10)
-  - [ ] LICENSE (line 3)
-  - [ ] DATA_DICTIONARY.md (line 254)
+- [x] Replace `[Author Name]` with actual author name in:
+  - [x] README.md → **S. M. Gavrikov and N. I. Lysenok**
+  - [x] CITATION.cff → **S. M. Gavrikov and N. I. Lysenok**
+  - [x] LICENSE → **S. M. Gavrikov and N. I. Lysenok**
+  - [x] DATA_DICTIONARY.md → **S. M. Gavrikov and N. I. Lysenok**
 
-- [ ] Replace `[Author Institution]` with actual affiliation in:
-  - [ ] CITATION.cff (line 11)
+- [x] Replace `[Author Institution]` with actual affiliation in:
+  - [x] CITATION.cff → **HSE Moscow**
 
-- [ ] Replace `[your.email@institution.edu]` with actual email in:
-  - [ ] README.md (line 172)
-  - [ ] DATA_DICTIONARY.md (line 256)
+- [x] Replace `[your.email@institution.edu]` with actual email in:
+  - [x] README.md → **nilysenok@hse.ru**
+  - [x] DATA_DICTIONARY.md → **nilysenok@hse.ru**
 
-- [ ] Replace `YOUR-USERNAME` with actual GitHub username in:
-  - [ ] README.md (lines 41, 172)
-  - [ ] CITATION.cff (lines 12-13)
-  - [ ] QUICKSTART.md (line 43)
+- [x] Replace `YOUR-USERNAME` with actual GitHub username in:
+  - [x] README.md → **nilysenok**
+  - [x] CITATION.cff → **nilysenok**
+  - [x] QUICKSTART.md → **nilysenok**
 
 - [ ] Update DOI placeholder in:
   - [ ] README.md (line 161)
@@ -144,7 +144,7 @@ Run through this complete workflow on a fresh machine:
 
 ```bash
 # Clone
-git clone https://github.com/YOUR-USERNAME/DBN-FBD-China.git
+git clone https://github.com/nilysenok/DBN-FBD-China.git
 cd DBN-FBD-China
 
 # Setup
@@ -229,9 +229,9 @@ Before going live, confirm:
 
 **Publication Date**: _______________
 
-**Published By**: _______________
+**Published By**: S. M. Gavrikov and N. I. Lysenok
 
-**Repository URL**: https://github.com/_______________/DBN-FBD-China
+**Repository URL**: https://github.com/nilysenok/DBN-FBD-China
 
 **Zenodo DOI**: _______________
 

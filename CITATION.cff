@@ -3,12 +3,16 @@ message: "If you use this software, please cite it as below."
 type: software
 title: "Financial Bubble Detection in Chinese Stock Markets Using Dynamic Bayesian Networks - Replication Package"
 authors:
-  - family-names: "[Author Last Name]"
-    given-names: "[Author First Name]"
-    orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
-    affiliation: "[Author Institution]"
-repository-code: "https://github.com/YOUR-USERNAME/DBN-FBD-China"
-url: "https://github.com/YOUR-USERNAME/DBN-FBD-China"
+  - family-names: "Gavrikov"
+    given-names: "S. M."
+    email: "smgavrikov@sdf-solutions.com"
+    affiliation: "National Research University Higher School of Economics (HSE), Moscow, Russia"
+  - family-names: "Lysenok"
+    given-names: "N. I."
+    email: "nilysenok@hse.ru"
+    affiliation: "National Research University Higher School of Economics (HSE), Moscow, Russia"
+repository-code: "https://github.com/nilysenok/DBN-FBD-China"
+url: "https://github.com/nilysenok/DBN-FBD-China"
 abstract: "This repository contains the replication package for the paper 'Financial Bubble Detection in Chinese Stock Markets Using Dynamic Bayesian Networks' published in China Finance Review International (2025). The Dynamic Bayesian Network Financial Bubble Detector (DBN-FBD) achieves perfect accuracy in identifying major Chinese market events including the 2015 crash, 2018 correction, 2021 tech bubble, and 2022 bottom."
 keywords:
   - financial bubbles
@@ -25,9 +29,10 @@ date-released: "2025-01-01"
 preferred-citation:
   type: article
   authors:
-    - family-names: "[Author Last Name]"
-      given-names: "[Author First Name]"
-      orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+    - family-names: "Gavrikov"
+      given-names: "S. M."
+    - family-names: "Lysenok"
+      given-names: "N. I."
   title: "Financial Bubble Detection in Chinese Stock Markets Using Dynamic Bayesian Networks"
   journal: "China Finance Review International"
   year: 2025
