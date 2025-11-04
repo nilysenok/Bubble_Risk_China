@@ -3,7 +3,6 @@
 This repository contains data, code, and documentation to replicate the results reported in:
 
 **"Financial Bubble Detection in Chinese Stock Markets Using Dynamic Bayesian Networks"**
-*Published in China Finance Review International, 2025*
 
 ## Overview
 
@@ -272,4 +271,5 @@ We thank participants at [Conference Name] for helpful comments and suggestions.
 
 **Last Updated**: January 2025
 **Package Version**: 1.0.0
+
 
