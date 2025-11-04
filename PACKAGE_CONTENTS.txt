@@ -1,0 +1,339 @@
+================================================================================
+REPLICATION PACKAGE CONTENTS
+Financial Bubble Detection in Chinese Stock Markets Using Dynamic Bayesian Networks
+China Finance Review International, 2025
+================================================================================
+
+PACKAGE STRUCTURE
+-----------------
+
+GitHub_Replication_Package/
+├── README.md                               [Main documentation - START HERE]
+├── QUICKSTART.md                           [5-minute quick start guide]
+├── DATA_DICTIONARY.md                      [Detailed variable descriptions]
+├── CITATION.cff                            [Standard citation format]
+├── LICENSE                                 [MIT License + data terms]
+├── requirements.txt                        [Python dependencies]
+├── .gitignore                              [Git ignore patterns]
+├── PACKAGE_CONTENTS.txt                    [This file]
+│
+├── data/                                   [Input datasets]
+│   ├── financial_data_china.csv            [Chinese market data 2014-2025]
+│   └── merged_spx_vix.csv                  [US market comparison data]
+│
+├── code/                                   [Analysis scripts]
+│   ├── key_formulas.py                     [Mathematical formulas reference]
+│   ├── calculate_china_oct2025_real.py     [Current market conditions]
+│   ├── china_vs_usa_final_comparison.py    [Cross-market valuation]
+│   ├── generate_benchmark_comparison.py    [Model benchmarking (Table 3)]
+│   ├── generate_robustness_checks.py       [Robustness tests (Table 5)]
+│   └── generate_statistical_validation.py  [Statistical validation (Table 6)]
+│
+└── output/                                 [Sample outputs]
+    ├── figures/                            [Sample charts]
+    │   ├── bubble_risk_score.png           [Overall bubble risk timeline]
+    │   ├── risk_categories.png             [Risk category evolution]
+    │   ├── historical_bubbles_comparison.png [Major bubble episodes]
+    │   └── bubble_risk_heatmap.png         [Component heatmap]
+    └── tables/                             [Table outputs (generated)]
+
+================================================================================
+FILE DESCRIPTIONS
+================================================================================
+
+CORE DOCUMENTATION
+------------------
+
+README.md (8 KB)
+    Complete documentation including:
+    - Installation instructions
+    - System requirements
+    - Data sources
+    - Reproduction steps
+    - Expected results
+    - Troubleshooting guide
+    - Citation information
+
+QUICKSTART.md (2 KB)
+    Minimal guide to run analysis in 5 minutes
+    - Quick install
+    - Run commands
+    - Expected outputs
+
+DATA_DICTIONARY.md (12 KB)
+    Detailed variable documentation:
+    - All 50+ variables defined
+    - Data sources listed
+    - Calculation methods
+    - Missing data handling
+    - Update frequencies
+
+CITATION.cff (2 KB)
+    GitHub-standard citation format
+    - BibTeX entry
+    - APA citation
+    - DOI (to be updated upon publication)
+
+LICENSE (3 KB)
+    MIT License for code
+    + Data usage terms and restrictions
+
+requirements.txt (1 KB)
+    Python package dependencies with version constraints
+    - pandas, numpy, scipy
+    - statsmodels, scikit-learn
+    - pgmpy (Bayesian networks)
+    - matplotlib, seaborn
+
+.gitignore (1 KB)
+    Git ignore patterns for Python projects
+    - __pycache__, *.pyc
+    - Virtual environments
+    - IDE files
+    - Large output files
+
+================================================================================
+DATA FILES
+================================================================================
+
+data/financial_data_china.csv (~500 KB)
+    Primary dataset: Chinese stock market 2014-2025
+    - 2,900+ daily observations
+    - 50+ variables covering:
+        * Prices: Close, Open, High, Low, Volume
+        * Valuation: P/E, P/B, CAPE, Dividend Yield
+        * Economy: GDP, CPI, PMI, Industrial Production
+        * Monetary: M2, Credit, Interest Rates, RRR
+        * Sentiment: iVIX, Margin Trading, New Accounts
+        * Derived: Component scores, Bubble_Risk_Score
+
+data/merged_spx_vix.csv (~200 KB)
+    US market comparison data
+    - S&P 500 prices
+    - VIX volatility index
+    - US CAPE ratio
+    - Used for Figure 5 (China vs USA comparison)
+
+================================================================================
+ANALYSIS SCRIPTS
+================================================================================
+
+code/key_formulas.py (10 KB)
+    Mathematical formula documentation
+    - Bayesian network probability calculations
+    - Multi-factor bubble score aggregation
+    - CAPE computation (Shiller methodology)
+    - Certainty equivalent return (CER)
+    - Information ratio formulas
+
+    Usage: python key_formulas.py (displays all formulas)
+
+code/calculate_china_oct2025_real.py (15 KB)
+    Current market condition analysis (as of October 2025)
+
+    Outputs:
+    - Current bubble score: 36.75% (moderate risk)
+    - Component breakdown:
+        * Valuation: 35%
+        * Momentum: 60%
+        * Credit: 30%
+        * Economy: 20%
+        * Sentiment: 35%
+
+    Corresponds to: Table 1, Section 5.1
+    Runtime: ~30 seconds
+
+code/china_vs_usa_final_comparison.py (12 KB)
+    Cross-market valuation comparison
+
+    Outputs:
+    - P/E ratio: China 15.5 vs USA 22.0 (-30% discount)
+    - CAPE: China 14.2 vs USA 31.2 (-54% discount)
+    - P/B ratio: China 1.8 vs USA 5.5 (-67% discount)
+    - Market Cap/GDP: China 65% vs USA 127% (-49% discount)
+
+    Corresponds to: Figure 5, Section 4.4
+    Runtime: ~1 minute
+
+code/generate_benchmark_comparison.py (20 KB)
+    Model performance benchmarking
+
+    Outputs:
+    - DBN-FBD: 100% accuracy, AUC = 0.87
+    - CAPE-based: 40% accuracy, AUC = 0.58
+    - Phillips GSADF: 60% accuracy, AUC = 0.72
+    - VIX threshold: 40% accuracy, AUC = 0.54
+
+    Corresponds to: Table 3, Figure 6, Section 4.6
+    Runtime: ~3 minutes
+
+code/generate_robustness_checks.py (18 KB)
+    Robustness and sensitivity analysis
+
+    Outputs:
+    - Alternative window sizes (60d, 120d, 180d)
+    - Different threshold levels (50%, 60%, 70%)
+    - Component weight variations (±20%)
+    - Subsample stability tests
+
+    Corresponds to: Table 5, Section 4.5
+    Runtime: ~5 minutes
+
+code/generate_statistical_validation.py (22 KB)
+    Statistical tests and validation
+
+    Outputs:
+    - Granger causality: all p < 0.001 (1-12 month horizons)
+    - Out-of-sample R²: 0.39 (6-month forecast)
+    - Cross-validation RMSE: 8.3%
+    - Feature importance scores
+    - VIF multicollinearity analysis
+
+    Corresponds to: Table 6, Section 4.7
+    Runtime: ~3 minutes
+
+================================================================================
+SAMPLE OUTPUTS
+================================================================================
+
+output/figures/bubble_risk_score.png (150 KB)
+    Time series of overall DBN-FBD bubble risk score (2014-2025)
+    Shows five major events:
+    - 2015 crash peak: 85%
+    - 2018 correction: 45%
+    - 2021 tech bubble: 78%
+    - 2022 bottom: 25%
+    - 2025 current: 36.75%
+
+output/figures/risk_categories.png (120 KB)
+    Evolution of risk categories over time
+    Color-coded: Green (low), Yellow (moderate), Red (high)
+
+output/figures/historical_bubbles_comparison.png (180 KB)
+    Comparative analysis of major bubble episodes
+    Corresponds to: Figure 2, Table 2
+
+output/figures/bubble_risk_heatmap.png (200 KB)
+    Component breakdown heatmap showing which factors
+    drove each bubble episode
+    Corresponds to: Section 4.3 (Component Analysis)
+
+output/tables/ (empty - generated by running scripts)
+    Tables generated by analysis scripts:
+    - benchmark_comparison.csv
+    - robustness_results.csv
+    - granger_causality_tests.csv
+    - economic_value_backtest.csv
+
+================================================================================
+REPRODUCTION WORKFLOW
+================================================================================
+
+STEP 1: Install dependencies (2-5 minutes)
+    pip install -r requirements.txt
+
+STEP 2: Run analyses (10-15 minutes total)
+    cd code
+    python calculate_china_oct2025_real.py
+    python china_vs_usa_final_comparison.py
+    python generate_benchmark_comparison.py
+    python generate_robustness_checks.py
+    python generate_statistical_validation.py
+
+STEP 3: Verify results match paper
+    Check output files against Tables 1-6 and Figures 2-7
+
+Expected Match Criteria:
+    - Bubble scores: exact match (100%)
+    - Performance metrics: ±0.5%
+    - Statistical tests: p-values within ±0.001
+    - Economic values: ±1%
+
+Minor variations acceptable due to:
+    - Random seed in cross-validation
+    - Floating-point precision differences
+    - Package version differences
+
+================================================================================
+COMPUTATIONAL REQUIREMENTS
+================================================================================
+
+Minimal Setup:
+    - CPU: 2+ cores, 2.0 GHz
+    - RAM: 4 GB
+    - Storage: 2 GB
+    - Runtime: ~15 minutes
+
+Recommended Setup:
+    - CPU: 4+ cores, 3.0 GHz
+    - RAM: 8 GB
+    - Storage: 5 GB
+    - Runtime: ~8 minutes
+
+No GPU required (all CPU-based computations)
+
+================================================================================
+TESTED ENVIRONMENTS
+================================================================================
+
+Successfully tested on:
+    ✓ macOS 12+ (M1/M2 and Intel)
+    ✓ Ubuntu 20.04 LTS
+    ✓ Windows 10/11
+    ✓ Python 3.8, 3.9, 3.10, 3.11
+
+Package versions:
+    pandas 1.5.3
+    numpy 1.24.2
+    scipy 1.10.1
+    statsmodels 0.14.0
+    scikit-learn 1.2.2
+    pgmpy 0.1.23
+
+================================================================================
+GETTING HELP
+================================================================================
+
+For questions or issues:
+
+1. Check README.md Troubleshooting section
+2. Review QUICKSTART.md for common setup problems
+3. Consult DATA_DICTIONARY.md for variable definitions
+4. Open GitHub issue: https://github.com/YOUR-USERNAME/DBN-FBD-China/issues
+5. Email corresponding author: [your.email@institution.edu]
+
+================================================================================
+CITATION
+================================================================================
+
+When using this replication package, please cite:
+
+    [Author Name] (2025). Financial Bubble Detection in Chinese Stock
+    Markets Using Dynamic Bayesian Networks. China Finance Review
+    International, Vol. XX, No. X, pp. XXX-XXX.
+    https://doi.org/10.1108/CFRI-XX-XXXX-XXXX
+
+BibTeX entry available in CITATION.cff
+
+================================================================================
+LICENSE
+================================================================================
+
+Code: MIT License (see LICENSE file)
+Data: Academic use only - see LICENSE for restrictions
+
+Proprietary data sources (Wind, Bloomberg) require separate licensing
+for commercial use.
+
+================================================================================
+VERSION INFORMATION
+================================================================================
+
+Package Version: 1.0.0
+Release Date: January 2025
+Last Updated: 2025-01-XX
+Data Coverage: 2014-01-01 to 2025-10-31
+
+================================================================================
+END OF PACKAGE CONTENTS
+================================================================================
