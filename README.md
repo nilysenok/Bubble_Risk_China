@@ -254,7 +254,7 @@ All data is subject to their respective terms of use and licensing agreements.
 
 This replication package is licensed under the MIT License (see LICENSE file).
 
-**Data sharing is subject to compliance with institutional data usage agreements and Chinese securities regulations.** Some proprietary data sources (Wind, Bloomberg) require licensed access for commercial use, but aggregate statistics and model outputs are freely available for academic research.
+**Data sharing is subject to compliance with institutional data usage agreements and Chinese securities regulations.** Some proprietary data sources require licensed access for commercial use, but aggregate statistics and model outputs are freely available for academic research.
 
 ## Contact
 
@@ -272,3 +272,4 @@ We thank participants at [Conference Name] for helpful comments and suggestions.
 
 **Last Updated**: January 2025
 **Package Version**: 1.0.0
+
